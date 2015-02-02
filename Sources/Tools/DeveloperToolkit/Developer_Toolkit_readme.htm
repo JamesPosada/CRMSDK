@@ -1,0 +1,314 @@
+<html>
+<head>
+ <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+ <style>
+<!--
+ /* Font Definitions */
+
+@font-face
+	{font-family:Cambria;
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+ /* Style Definitions */
+hr
+	{margin-left:.25in;}
+h1, h2
+	{mso-style-link:"Heading 1 Char";
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.25in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Cambria","serif";
+	color:#365F91;}
+h3
+	{mso-style-link:"Heading 2 Char";
+	margin-top:10.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.25in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:13.0pt;
+	font-family:"Cambria","serif";
+	color:#4F81BD;}
+a:link
+	{color:blue;
+	text-decoration:underline;}
+a:visited
+	{color:purple;
+	text-decoration:underline;}
+p.bodytext, p.copyrighttext, li
+	{margin-top:5px;
+	margin-right:0in;
+	margin-bottom:5px;
+	margin-left:.25in;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+ul
+	{margin-top:0in;}
+
+li.listbullet, li.listalpha
+	{margin-top:0px;
+	margin-right:0in;
+	margin-bottom:5px;
+	margin-left:.25in;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+
+p.relateditem
+	{margin-top:5px;
+	margin-right:0in;
+	margin-bottom:5px;
+	margin-left:.5in;
+	line-height:115%;
+	font-size:12.0pt;
+	font-family:"Calibri","sans-serif";}
+
+p.issue
+	{margin-top:10px;
+	margin-right:0in;
+	margin-bottom:0pt;
+	margin-left:.25in;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	font-weight:bold;
+	color:#4F81BD;}
+
+p.code
+	{margin-top:5px;
+	margin-right:0in;
+	margin-bottom:5px;
+	margin-left:.25in;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Courier New";
+	}
+	
+	span.code
+	{font-family:"Courier New"}
+
+p.resolution
+	{margin-top:0px;
+	margin-right:0in;
+	margin-bottom:10pt;
+	margin-left:.25in;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+
+span.citation
+	{
+	font-style:italic;
+	}
+
+span.placeholder
+	{
+	font-style:italic;
+	}
+span.uiitem
+	{
+	font-weight:bold;
+	}
+	span.issue
+	{
+	font-weight:bold;
+	}
+	span.resolution
+	{
+	font-weight:bold;
+	}
+
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+    
+.content-fragment.search-result-list .abbreviated-post em { background: #FAFF05 }
+    -->
+</style>
+ <title></title>
+</head>
+<body>
+ <h1 align="center">
+  Developer Toolkit for Microsoft Dynamics CRM 2011 and Microsoft Dynamics CRM Online Readme</h1>
+ <h2 align="center">
+  Release Version 1.1</h2>
+ <h2 align="center">
+  December 2012</h2>
+ <hr>
+ <p class="bodytext">
+  This document provides important, late-breaking information about the Microsoft Dynamics CRM Developer Toolkit for Microsoft Dynamics CRM 2011 and Microsoft Dynamics CRM Online.
+ </p>
+ <p class="bodytext">
+  &nbsp;</p>
+ <a name="o47491"></a>
+ <h1 class="heading1">
+  Getting Started</h1>
+ <p class="bodytext">
+  Before you use the Microsoft Dynamics CRM 2011 Developer Toolkit, you should review the SDK topics under <a href="http://msdn.microsoft.com/en-us/library/hh372957.aspx" target="_blank">Developer Toolkit for Microsoft Dynamics CRM 2011 and Microsoft Dynamics CRM Online.</a></p>
+  <p  class="bodytext">For information about prerequisites and installation 
+      instructions, see <a href="http://msdn.microsoft.com/en-us/library/hh547459.aspx" target="_blank">Install or Uninstall the Developer Toolkit</a> 
+      .</p>
+ <p  class="bodytext">&nbsp;</p>
+ <h1>Whats new</h1>
+ <p  class="bodytext">Microsoft Visual Studio 2012 is now supported by using the CrmDeveloperToolsVS12_Installer.msi installer.</p>
+ <p  class="bodytext">Added support for Microsoft Dynamics&nbsp; CRM 2011 hosted via Office 365 ( OSDP 
+ support ).&nbsp; (SE:30137)</p>
+ <p  class="bodytext">Corrected an issue when using vitrual folders in solutions 
+     that caused issues when creating entity class. (31405)</p>
+ <a name="o47489"></a>
+ <h1 class="heading1">
+  Known Issues with the Microsoft Dynamics CRM 2011 Developer Toolkit</h1>
+ <p class="issue">
+  Visual Basic .NET is not supported (131574)</p>
+ <p class="resolution">
+  The Developer Toolkit does not support Visual Basic .NET.</p>
+ <p class="issue">
+  No upgrade path for projects created with the Microsoft Dynamics CRM 4.0 Developers Toolkit (121629)</p>
+ <p class="resolution">
+  The
+  <a href="http://code.msdn.microsoft.com/E2DevTkt">Microsoft Dynamics CRM Developer’s Toolkit for CRM 4.0</a>, which provided a sample project and integration with Visual Studio, was released in April 2009 on MSDN Code Gallery.
+ </p>
+ <p class="resolution">
+  The Developer Toolkit for CRM 2011 has been completely rewritten to support native Visual Studio development practices and project templates, to be less dependent on MSBuild, and to improve deployment support for new Microsoft Dynamics CRM development paradigms, including Microsoft Dynamics CRM 
+     solutions and web resources.</p>
+ 
+ <p class="issue">Sporadic &quot;Object Reference not set to an instance of an object&quot; errors when using the CRM Explorer (138780)</p>
+ <p class="resolution"><span class="issue">Issue: </span>When using the CRM Explorer &quot;Object Reference not set to an instance of an object&quot; errors occur sporadically.</p>
+  <p class="resolution"><span  class="resolution">Workaround: </span>If you encounter this error while performing an operation, refresh the organization tree and try the operation again.</p>
+
+ <p class="issue">
+  Invalid Project templates for CRM WorkflowLibrary (138374)</p>
+ <p class="resolution">
+  <span class="issue">Issue:</span> After installing the Microsoft Dynamics CRM Developer Toolkit, when you create a new project, below the Installed Templates for Visual C# you will see a CRM Workflow Library group containing a number of CRM Workflow Library project templates.
+ </p>
+ <p class="resolution">
+  <span class="resolution">Workaround:</span> Do not use these project templates.</p>
+ <p class="issue">
+  When an error occurs while deploying a solution other solution components will not be deployed. (126277)</p>
+ <p class="resolution">
+  Any solution components deployed before the error occurs will succeed and will not be rolled back after the error occurs. Any solution components that were not deployed before the error will not be deployed.</p>
+ <p class="issue">
+  Solution components are added to default solution if specified unmanaged solution is deleted. (126536)</p>
+ <p class="resolution">
+  If you configure your Visual Studio solution to connect to a specific unmanaged solution and that solution is later deleted, the solution components will still be deployed to the default solution.</p>
+ <p class="issue">
+  The RegisterFile.crmregister must be manually edited after a generated class is deleted (139890)</p>
+ <p class="resolution">
+  <span class="issue">Issue:</span> If you attempt to deploy a solution after deleting a class generated for a plug-in or workflow you will see the following error:
+ </p>
+ <p class="code">
+  Error registering plugins and/or workflows. Plug-in assembly does not contain the required types or assembly content cannot be updated.</p>
+ <p class="resolution">
+  <span class="resolution">Workaround:</span> Open the RegisterFile.crmregister file to remove the <span class="code">&lt;Plugin&gt;</span>,<span class="code">&lt;WorkflowType&gt;</span>, or <span class="code"> &lt;XamlWorkflowType&gt;</span>&nbsp;node where the <span class="code">TypeName</span> attribute specifies the fully qualified name of the class that was deleted.</p>
+ <p class="issue">
+  Invalid error message following any other error when adding a web resource (135124)</p>
+ <p class="resolution">
+  When a validation error occurs because of a problem adding a web resource, the following error message will follow it:</p>
+ <p class="code">
+  The selected file is not a valid type of web resource</p>
+ <p class="resolution">
+  For example, when adding a web resource with the same name as an existing web resource you will get the expected error &quot;A file with this name already exists. Please give it a unique name.&quot; but after clicking OK to close that error you will also get the invalid error incorrectly indicating that the file is not a valid type of web resource.</p>
+
+ <p class="issue">
+  RegisterSchema.xsd uses enumeration values for specifying the stage of a plug-in step that are inconsistent or misleading. (136101)</p>
+ <p class="resolution">
+  <span class="issue">Issue:</span> For the <span class="code">&lt;Step&gt;</span> elements within the RegisterFile.crmregister the enumeration defining valid values used by the Stage attribute do not match those used by the Plugin Registration Tool. The following table shows how the equivilent values used in the Plugin Registration tool:</p>
+ <table style="margin-left:50px; font-family:Calibri,sans-serif;">
+  <tr>
+   <th>
+    RegisterFile.crmregister values
+   </th>
+   <th>
+    Plugin Registration Tool values
+   </th>
+  </tr>
+  <tr>
+   <td>
+   <span class="code">PreOutsideTransaction</span>
+   </td>
+   <td>
+    <span class="code">PreValidation</span>
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <span class="code">PreInsideTransaction</span>
+   </td>
+   <td>
+    <span class="code">PreOperation</span>
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <span class="code">PostOutsideTransaction</span>
+   </td>
+   <td>
+    <span class="code">PostOperation</span>
+   </td>
+  </tr>
+ </table>
+ <p class="resolution">The enumeration value <span class="code">PostOutsideTransaction</span> is misleading. <span class="code">PostInsideTransaction</span> would be a more accurate because this represents Stage 40. See <a href="http://msdn.microsoft.com/en-us/library/gg327941.aspx#bkmk_PipelineStages">Event Execution Pipeline : Pipeline Stages</a> for more information.</p>
+ <p class="issue">
+  Duplicate file extensions added when existing web resources are added to project(138384)</p>
+ <p class="resolution">
+  <span class="issue">Issue:</span> When adding web resources from another solution to the current project in the Developer Toolkit using the Add to Packagin Project command in the CRM Explorer, the web resource files are added to the packaging project and a corresponding file extension is added ot the name of the file. For example, an existing web resource named filename.js will be filename.js.js. This has no effect on the behavior of the web resource because the unique name used by the web resource is not necessarily the same as the file name.</p>
+ <p class="resolution">
+  <span class="resolution">Workaround:</span> You can re-name the file used in the packaging project to remove the duplicate file extension.</p>
+ <p class="issue">
+  Error building solution that includes XAML Workflow projects (139788)</p>
+ <p class="resolution">
+  <span class="issue">Issue:</span> By default the reference to Sysem.Runtime.Serialization is not included in XAML Workflow projects. If you do not add this reference an error will occur when you attempt to build the project.</p>
+ <p class="resolution">
+  <span class="resolution">Workaround:</span> Add a reference to System.Runtime.Serialization to any XAML Workflow projects you add.</p>
+ <p class="issue">
+  Solutions drop-down displays managed solutions (136003)</p>
+ <p class="resolution">
+  <span class="issue">Issue:</span> When you connect to the Microsoft Dynamics CRM Server and select an organization, you have the option to select a solution. The solutions listed may include managed solutions. If you choose a managed solution when you later try to deploy your solution the following error may occur:</p>
+ <p class="code">
+  Error registering plugins and/or workflows. The PluginAssembly entity or component has attempted to transition from an invalid state: ComponentStateName: None; ComponentOperation: Create; ComponentSolutionType: Solution; SolutionOperationContext: None; IsProtected: True; IsBeingPublished: True.</p>
+ <p class="resolution">
+  <span class="resolution">Workaround:</span> When you choose a solution be sure to choose an unmanaged solution.</p>
+ <h1 class="heading1">
+  Documentation Feedback</h1>
+ <p class="bodytext">
+  The Microsoft Dynamics CRM Documentation Team welcomes your suggestions and comments about the documentation. You can quickly and directly send email feedback to
+  <a class="" title="" href="mailto:mscrmdf@microsoft.com?subject=Microsoft%20Dynamics%20CRM%20SDK(/1:SDK%20Content/2:V5.0/3:V5.0.13/4:Developer_Toolkit_Readme.htm/5:none/6:en-us/7:Both)" target="_blank">Documentation Feedback</a>. All feedback must be in English. Your feedback will be used to make improvements to the SDK and shape the content delivered to the Microsoft Dynamics CRM Development Center on MSDN.</p>
+ <p>
+ </p>
+ <h1>
+  Copyright</h1>
+ <p class="bodytext">
+  This document is provided &quot;as-is&quot;. Information and views expressed in this document, including URL and other Internet Web site references, may change without notice. You bear the risk of using it.&nbsp;
+ </p>
+ <p class="bodytext">
+  Some examples depicted herein are provided for illustration only and are fictitious. No real association or connection is intended or should be inferred.</p>
+ <p class="bodytext">
+  This document does not provide you with any legal rights to any intellectual property in any Microsoft product. You may copy and use this document for your internal, reference purposes.</p>
+ <p class="bodytext">
+  © 2012 Microsoft Corporation. All rights reserved.</p>
+ <p class="bodytext">
+  Microsoft, Active Directory, ActiveX, Azure, BizTalk, JScript, Microsoft Dynamics, Outlook, SharePoint, SQL Server, Visual Basic, Visual C#, Visual Studio, Windows, Windows Server, and Windows Vista are trademarks of the Microsoft group of companies.
+ </p>
+ <p class="bodytext">
+  All other trademarks are property of their respective owners.</p>
+ <p class="bodytext">
+  &nbsp;</p>
+ <hr>
+</body>
+</html>

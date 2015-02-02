@@ -1,0 +1,98 @@
+﻿<!--<snippetRESTRetrieveMultipleSilverlightXAML>-->
+    <UserControl x:Class="Microsoft.Crm.Sdk.Samples.MainPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             d:DesignHeight="300"
+             d:DesignWidth="500"
+             xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk">
+
+    <Grid x:Name="LayoutRoot"
+          Background="White"
+          Height="300"
+          Width="500">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="250*" />
+            <RowDefinition Height="50" />
+        </Grid.RowDefinitions>
+
+        <Grid x:Name="ButtonGrid"
+              Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="350" />
+                <ColumnDefinition Width="150" />
+            </Grid.ColumnDefinitions>
+            <Button x:Name="btnRetrieveAccounts"
+                    Content="Retrieve Accounts"
+                    Grid.Column="1"
+                    Height="23"
+                    Margin="5"
+                    VerticalAlignment="Center"
+                    Width="110"
+                    Click="btnRetrieveAccounts_Click" />
+            <Grid Grid.ColumnSpan="1"
+                  Grid.Column="0"
+                  HorizontalAlignment="Stretch"
+                  Margin="0"
+                  Name="RecordCountGrid"
+                  VerticalAlignment="Stretch">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="250" />
+                    <ColumnDefinition Width="100" />
+                </Grid.ColumnDefinitions>
+                <sdk:Label Content="Maximum Number of Accounts to Retrieve:"
+                           Height="28"
+                           HorizontalAlignment="Right"
+                           Margin="3"
+                           Name="RetrieveAccountsLabel"
+                           VerticalAlignment="Center" />
+                <ComboBox Grid.Column="1"
+                          Height="23"
+                          HorizontalAlignment="Center"
+                          Margin="0"
+                          x:Name="NumberOfAccountsToRetrieve"
+                          AutomationProperties.LabeledBy="{Binding ElementName=RetrieveAccountsLabel}" 
+                          VerticalAlignment="Center"
+                          Width="60">
+
+                    <ComboBoxItem IsSelected="True"
+                                  Content="100" />
+                    <ComboBoxItem Content="300" />
+                    <ComboBoxItem Content="600" />
+                    <ComboBoxItem Content="900" />
+
+
+                </ComboBox>
+            </Grid>
+        </Grid>
+        <sdk:DataGrid AutoGenerateColumns="False"
+                      HorizontalAlignment="Stretch"
+                      Margin="5"
+                      x:Name="AccountsGrid"
+                      VerticalAlignment="Stretch">
+            <sdk:DataGrid.Columns>
+                <sdk:DataGridTextColumn x:Name="AccountName"
+                                        Header="Account Name"
+                                        Binding="{Binding Path=Name, Mode=OneTime}"
+                                        IsReadOnly="True"
+                                        Width="300" />
+                <sdk:DataGridTextColumn x:Name="MainPhone"
+                                        Header="Main Phone"
+                                        Binding="{Binding Path=Telephone1, Mode=OneTime}"
+                                        IsReadOnly="True"
+                                        Width="*" />
+            </sdk:DataGrid.Columns>
+        </sdk:DataGrid>
+        <!-- Message area -->
+        <ScrollViewer x:Name="MessageArea"
+                      Visibility="Collapsed"
+                      Grid.Row="0"
+                      Grid.Column="0">
+            <StackPanel x:Name="Errors" />
+        </ScrollViewer>
+    </Grid>
+
+</UserControl>
+<!--</snippetRESTRetrieveMultipleSilverlightXAML>-->

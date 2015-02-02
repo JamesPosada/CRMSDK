@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="f2e90c1e-bbbc-475c-a703-a56a403fb4fd" xmlns="urn:schemas-microsoft-com:xml-dataservicemap">
+  <MetadataSources>
+    <MetadataSource Address="file:\\C:\Source\CrmSdkV5\CrmODataSilverlightNonInteractive\CrmODataSilverlightNonInteractive\Service References\$metadata.xml" Protocol="file" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="service.edmx" MetadataType="Edmx" ID="5b32d863-172d-4859-ad3d-baa1dd5c91c9" SourceId="1" SourceUrl="file:\\C:\Source\CrmSdkV5\CrmODataSilverlightNonInteractive\CrmODataSilverlightNonInteractive\Service References\$metadata.xml" />
+  </Metadata>
+  <Extensions />
+  <Parameters>
+    <Parameter Name="UseDataServiceCollection" Value="true" />
+    <Parameter Name="Version" Value="2.0" />
+  </Parameters>
+</ReferenceGroup>

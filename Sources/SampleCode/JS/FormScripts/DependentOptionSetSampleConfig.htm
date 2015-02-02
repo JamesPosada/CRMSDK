@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html lang="en-us">
+<head>
+ <title>Dependent OptionSet Sample Configuration Page</title>
+ <script type="text/javascript" src="ClientGlobalContext.js.aspx"></script>
+ <script type="text/javascript">
+  function getServerUrl() {
+   var serverUrl = GetGlobalContext().getServerUrl();
+   if (serverUrl.match(/\/$/)) {
+    serverUrl = serverUrl.substring(0, serverUrl.length - 1);
+   }
+   return serverUrl;
+  }
+  function openTicket() {
+
+   var features = "location=no,menubar=no,status=no,toolbar=no,resizable=yes";
+   var extraqs = ["sample_name=" + "Dependent OptionSet Example"]
+   window.open(getServerUrl() + "/main.aspx?etn=sample_ticket&pagetype=entityrecord&extraqs=" + encodeURIComponent(extraqs.join("&")), "_blank", features, false);
+
+  }
+ </script>
+</head>
+<body style="background-color: White; font-family: Segoe UI;">
+ <h1>
+  Dependent OptionSet Sample</h1>
+ <p>
+  Use the <b>Open Ticket Form</b> button to open a new <b>Ticket</b> form. Observe how the <b>Category</b>, <b>Sub Category</b>, and <b>Type</b> option set fields are dependent on each other.</p>
+ <button onclick="openTicket()">
+  Open Ticket Form</button>
+</body>
+</html>

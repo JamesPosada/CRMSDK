@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="40d44515-47dd-4f06-acb9-3b52281c45d9" xmlns="urn:schemas-microsoft-com:xml-dataservicemap">
+  <MetadataSources>
+    <MetadataSource Address="C:\Users\jdaly\Documents\Visual Studio 2010\Projects\SDK_\RESTSilverlightContactEditor\RESTSilverlightContactEditor\$metadata.xml" Protocol="file" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="service.edmx" MetadataType="Edmx" ID="b38ae370-ada0-4dbc-b958-2988d7c46d73" SourceId="1" SourceUrl="C:\Users\jdaly\Documents\Visual Studio 2010\Projects\SDK_\RESTSilverlightContactEditor\RESTSilverlightContactEditor\$metadata.xml" />
+  </Metadata>
+  <Extensions />
+  <Parameters>
+    <Parameter Name="UseDataServiceCollection" Value="true" />
+    <Parameter Name="Version" Value="2.0" />
+  </Parameters>
+</ReferenceGroup>
